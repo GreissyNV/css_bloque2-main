@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .box{
+            background-color: aqua;
+            padding: 1rem;
+            margin: 2rem;
+            /* offset-x | offset-y | color*/
+            box-shadow: 10px 10px pink;
+            /* offset-x | offset-y | blur-radius | color*/
+            box-shadow: 10px 10px 10px pink;
+            /* valores negativos */
+            box-shadow: -5px -5px 10px orange;
+            /* offset-x | offset-y | blur-radius | spread-radius | color*/
+            box-shadow: 10px 10px 10px 6px pink;
+            /* inset | offset-x | offset-y | color */
+            box-shadow: inset -5px -5px 10px 2px orange;
+            /* multiples sombras */
+            box-shadow: 10px 10px orange, -10px -10px yellow;
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+    <div class="box">
+        <h3>Título</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam hic, corporis nihil reprehenderit, illo reiciendis, porro eum ad natus voluptas soluta. Nisi at officia ducimus quis beatae in rem odio.</p>
+    </div>
+    <div class="box">
+        <h3>Título</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, rem mollitia voluptatum dolorem eos numquam corrupti adipisci temporibus officia veniam inventore consequatur praesentium minus, voluptatibus repudiandae odit accusamus magnam harum!</p>
+    </div>
+    <div class="box">
+        <h3>Título</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla blanditiis qui illum rerum voluptatibus! Laboriosam hic deserunt quaerat modi, nihil quae non, vel similique fugiat quidem, ipsum cum nobis odit.</p>
+    </div>
+   </div> 
+</body>
+</html>
