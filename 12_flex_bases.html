@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex container</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .flex-container{
+            display: flex;
+            height: 100vh;
+            /* flex-direction: column;
+            flex-wrap: wrap-reverse;  */
+            /* las 2 de arriba se pueden especificar con: Flex-Flow:row wrap */
+            align-items: center;
+            justify-content: center;
+            background-color: pink;
+        }
+
+        .item{
+            background-color: aqua;
+            border: #333 2px solid;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            order: 4;
+        }
+
+        .item-1 {
+            order: 2;
+            /* flex-grow: 6;
+            flex-shrink: 0;
+            flex-basis: 200px; */
+            flex: 6 0 200px;
+            
+        }
+        
+        .item-2 {
+            order: 3;
+            align-self: flex-end;
+        }
+
+        .item-3 {
+            flex-grow: 1;
+            font-size: 0.4rem;
+            order: 1;
+        }
+
+        .item-4 {
+            flex-grow: 1;
+        }
+
+        .item-5 {
+            flex-grow: 1;
+        }
+
+        .item-6 {
+            flex-grow: 2;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="item item-1">
+            <h3>item 1</h3>
+        </div>
+        <div class="item item-2">
+            <h3>item 2</h3>
+        </div>
+        <div class="item item-3">
+            <h3>item 3</h3>
+        </div>
+        <div class="item item-4">
+            <h3>item 4</h3>
+        </div>
+        <div class="item item-5">
+            <h3>item 5</h3>
+        </div>
+        <div class="item item-6">
+            <h3>item 6</h3>
+        </div>
+        
+    </div>
+</body>
+</html>

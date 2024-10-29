@@ -4,6 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Selectores de hijos concretos</title>
+    <style>
+        li{
+            padding: 0.25rem;
+            margin: 0.25rem;
+            list-style: none;
+        }
+        li:first-child{
+            background-color: red;
+        }
+        li:last-child{
+            background-color: blue;
+        }
+        /* hacerlo en el 3º */
+        li:nth-child(3){
+            background-color: purple;
+        }
+        /* Cada 4 empezando por el 2 */
+        li:nth-child(4n + 2){
+            background-color: orange;
+        }
+        /* para todos los numeros impares */
+        <li:nth-child(odd){
+            background-color: aqua;>
+        }
+        /* para todos los numeros pares */
+        li:nth-child(even){
+            background-color: pink;
+            color: yellow;
+        }
+        /* afecta a todos los hijos */
+        /* plate :only-child{} */
+        
+
+    </style>
 </head>
 <body>
 <ul>
