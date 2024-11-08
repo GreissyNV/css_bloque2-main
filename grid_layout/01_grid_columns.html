@@ -7,7 +7,9 @@
     <style>
         .grid-container {
             display: grid;
-            grid-template-columns: auto auto auto auto;
+            /* grid-template-columns: auto 100px 200px auto auto auto; */
+            grid-template-columns: repeat(6, auto);
+            gap: 1rem;
         }
 
         .item {
@@ -17,6 +19,12 @@
             text-align: center;
             font-size: 1.6rem;
             font-weight: bold;
+        }
+        main {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            gap: 2rem;
+            margin-top: 2rem;
         }
     </style>
 </head>
@@ -29,5 +37,20 @@
         <div class="item">Item 5</div>
         <div class="item">Item 6</div>
     </div>
+    <main>
+        <section>
+            <h3>Hello from grid layout</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus dolor corporis, iure voluptatum voluptates fugit, soluta nemo quos cumque, obcaecati aperiam sunt nesciunt repudiandae. Inventore ipsam quos necessitatibus velit quisquam!</p>
+        </section>
+        <aside>
+            <h3>Contacta con nosotros</h3>
+            <ul>
+                <li>Acme S.A</li>
+                <li>Avenida Puerto Rico, 3 Palma</li>
+                <li>info@acme.com</li>
+                <li>555-555-555</li>
+            </ul>
+        </aside>
+    </main>
 </body>
 </html>
